@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>UI Elements</title>
+        <link rel="stylesheet" href="css/master.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+            
+            <script type="text/javascript" src="../../scripts/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+            <script type="text/javascript" src="../../jqxnavbar.js"></script>
+</head>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#styleguide" onclick="window.location.href='index.html'">Style Guide</a>
+            <a href="#buttons" onClick="document.getElementById('btns').scrollIntoView();">Buttons</a>
+            <a href="#dropdowns" onClick="document.getElementById('dropdown').scrollIntoView();">Dropdowns</a>
+            <a href="#inputs" onClick="document.getElementById('INPUTS').scrollIntoView();">Inputs</a>
+            <a href="#avatars" onClick="document.getElementById('profiles').scrollIntoView();">Avatars</a>
+        </div>
+        <section class="main">
+            <h1>UI ELEMENTS</h1>   
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#navBar").jqxNavBar({ height: 40, selectedItem: 0 });
+                });
+            </script>
+
+            <div class="bggp" id="btns">
+                <h2>BUTTONS</h2>
+                <div id="btngoops">
+                    <div id="lgbtn">
+                    <p id="label">Large Buttons</p>
+                    <div id="lgbtns">
+                        <button>Button Default</button>
+                    </div>
+                    <div id="lgbtns">
+                        <button>Button Hover</button>
+                    </div>
+                    <div id="lgbtns">
+                        <button>Button Pressed</button>
+                    </div>
+                    </div>
+
+                    <div id="medbtn">
+                        <p id="label">Medium Buttons</p>
+                        <div id="medbtns">
+                            <button>Button Default</button>
+                        </div>
+                        <div id="medbtns">
+                            <button>Button Hover</button>
+                        </div>
+                        <div id="medbtns">
+                            <button>Button Pressed</button>
+                        </div>
+                        
+                        <div id="miscbtns">
+                            <p id="label">Miscellaneous Buttons</p>
+                            <div id="miscbtngp">
+                                <img id= "miscbtns" src="imgs/misc1.png">
+                                <img id="miscbtns" src="imgs/misc2.png">
+                                <img id="miscbtns" src="imgs/misc3.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="smbtn">
+                        <p id="label">Small Buttons</p>
+                        <div id="smbtns">
+                            <button>Button Default</button>
+                        </div>
+                        <div id="smbtns">
+                            <button>Button Hover</button>
+                        </div>
+                        <div id="smbtns">
+                            <button>Button Pressed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bggp" id="dropdown">
+                <h2 id="subhead">DROPOWNS</h2>
+                <div id="ddgoops">
+                    <div id="ddgoo">
+                        <p id="label">Ghost Dropdown - Large</p>
+                        <select class="ghost" name="ghost">
+                            <option value="">State</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="California">California</option>
+                            <option value="Nebraska">Nebraska</option>
+                        </select>
+                    </div>
+                    <div id="ddgoo">
+                        <p id="label">Ghost Dropdown - Small</p>
+                        <select class="ghostsm" name="ghost">
+                            <option value="">Size, Color</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="California">California</option>
+                            <option value="Nebraska">Nebraska</option>
+                        </select>
+                    </div>
+                    <div id="ddgoo">
+                        <p id="label">Default Dropdown - 1 Field</p>
+                        <select class="defaultdrop" name="default">
+                            <option value="">State</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="California">California</option>
+                            <option value="Nebraska">Nebraska</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="bggp" id="inputs">
+                <h2 id="subhead">INPUTS</h2>
+                <div id="inputgp">
+                    <div id="inpgp">
+                        <p id="label">Default Text Field</p>
+                        <input id="dtextf" type="text" name="Default Text Field" value="Default Text Field">
+                    </div>
+                    <div id="inpgp">
+                        <p id="label">Password</p>
+                        <input id="password" type="password" name="Password" size="15" value="********">
+                    </div>
+                    <div id="inpgp">
+                        <p id="label">Password - Error</p>
+                        <input id="passworderror" type="password" name="Password" size="15" value="********">
+                    </div>
+                    <div id="inpgp">
+                        <p id="label">Search - Ghost Text</p>
+                        <input id="searchghost" type="search" name="Default Text Field" value="Search">
+                    </div>
+                    <div id="inpgpsearch">
+                        <p id="label">Search</p>
+                        <input id="search" type="search" name="Default Text Field" value=" ">
+                    </div>
+                    <div id="inpgp">
+                        <p id="label">Default Number Input</p>
+                        <input id="number" type="number" name="Default Text Field" value="1234567890">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="bggp" id="profiles">
+                <h2 id="subhead">AVATARS</h2>
+                <div id="profilegp">
+                    <div class="profiles" id="pblank"> 
+                        
+                        <div id="pgroup">
+                            <p id="label">Avatar - Blank</p>
+                            <div id="pimage">
+                                <img src="imgs/AvBlank.png" alt="">
+                            </div>
+                        </div>
+                    
+                        <div id="avatargp">
+                            <div id="pgroup">
+                                <p id="label">Avatar - Edit</p>
+                                <div id="pimage">
+                                    <img id="gear" src="imgs/AvEdit.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profiles" id="profimage">
+                    <div id="avatargp">
+                        <div id="pgroup">
+                            <p id="label">Avatar - Picture</p>
+                            <div id="pimage">
+                                <img src="imgs/AvPicEdit.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="avatargp">
+                        <div id="pgroup">
+                            <p id="label">Avatar - Picture Edit</p>
+                            <div id="pimage">
+                                <img id="gear" src="imgs/AvPic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+
+            </div>
+        </section>
+    </body>
+</html>
